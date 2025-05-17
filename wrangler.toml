@@ -1,0 +1,37 @@
+# Top-level configuration
+name = "cemberkearslan.com" # Replace with your actual project name
+compatibility_date = "2025-05-17" # Use a recent date, format YYYY-MM-DD
+
+# If you have a Cloudflare Worker script (e.g., for an API or server-side logic)
+# uncomment and adjust the 'main' entry point if needed.
+# This tells Wrangler where your main server-side Worker code is.
+# If your functions are in a 'functions' directory and handled by Pages,
+# or if you only have static assets in 'dist', you might adjust or omit this.
+# main = "src/index.js" # Or "src/index.ts" if using TypeScript
+
+# Configuration for serving static assets
+# This tells Wrangler that your static files (HTML, CSS, JS, images, etc.)
+# are in the "./dist" directory.
+[site]
+bucket = "./dist"
+
+# If you have environment variables for your Worker, you can define them here.
+# These are for build time and runtime. Secrets should be set via the dashboard or `wrangler secret put`.
+# [vars]
+# MY_VARIABLE = "some_value"
+# ANOTHER_VARIABLE = "another_value"
+
+# You can also define different environments (e.g., staging, production)
+# [env.production]
+# name = "your-project-name-production"
+# [env.production.site]
+# bucket = "./dist"
+# [env.production.vars]
+# API_URL = "https://api.example.com"
+
+# [env.staging]
+# name = "your-project-name-staging"
+# [env.staging.site]
+# bucket = "./dist" # Or a different bucket if staging has different assets
+# [env.staging.vars]
+# API_URL = "https://staging.api.example.com"
