@@ -1,7 +1,7 @@
 # Top-level configuration
 name = "personal-website" # Replace with your actual project name
 compatibility_date = "2025-05-17" # Use a recent date, format YYYY-MM-DD
-
+account_id = "16b24814bf60915b8ff6fed1a6dcebf7"
 # If you have a Cloudflare Worker script (e.g., for an API or server-side logic)
 # uncomment and adjust the 'main' entry point if needed.
 # This tells Wrangler where your main server-side Worker code is.
@@ -14,6 +14,7 @@ main = "src/main.js" # Or "src/index.ts" if using TypeScript
 # are in the "./dist" directory.
 [site]
 bucket = "./dist"
+pages_build_output_dir = "./dist"
 
 # If you have environment variables for your Worker, you can define them here.
 # These are for build time and runtime. Secrets should be set via the dashboard or `wrangler secret put`.
