@@ -1,5 +1,5 @@
 # Top-level configuration
-name = "cemberkearslancom" # Replace with your actual project name
+name = "personal-website" # Replace with your actual project name
 compatibility_date = "2025-05-17" # Use a recent date, format YYYY-MM-DD
 
 # If you have a Cloudflare Worker script (e.g., for an API or server-side logic)
