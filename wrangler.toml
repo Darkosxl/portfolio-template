@@ -8,12 +8,12 @@ account_id = "16b24814bf60915b8ff6fed1a6dcebf7"
 # If your functions are in a 'functions' directory and handled by Pages,
 # or if you only have static assets in 'dist', you might adjust or omit this.
 main = "src/main.js" # Or "src/index.ts" if using TypeScript
+pages_build_output_dir = "./dist"
 
 # Configuration for serving static assets
 # This tells Wrangler that your static files (HTML, CSS, JS, images, etc.)
 # are in the "./dist" directory.
 [site]
-bucket = "./dist"
 pages_build_output_dir = "./dist"
 
 # If you have environment variables for your Worker, you can define them here.
