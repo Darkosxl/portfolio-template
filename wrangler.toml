@@ -1,5 +1,4 @@
-name               = "personal-website"
-account_id         = "16b24814bf60915b8ff6fed1a6dcebf7"
-compatibility_date = "2025-05-17"
 
+name               = "personal-website"
+compatibility_date = "2025-05-17"
 pages_build_output_dir = "./dist"
