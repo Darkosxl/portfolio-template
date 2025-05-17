@@ -1,5 +1,5 @@
 # Top-level configuration
-name = "cemberkearslan.com" # Replace with your actual project name
+name = "cemberkearslancom" # Replace with your actual project name
 compatibility_date = "2025-05-17" # Use a recent date, format YYYY-MM-DD
 
 # If you have a Cloudflare Worker script (e.g., for an API or server-side logic)
@@ -7,7 +7,7 @@ compatibility_date = "2025-05-17" # Use a recent date, format YYYY-MM-DD
 # This tells Wrangler where your main server-side Worker code is.
 # If your functions are in a 'functions' directory and handled by Pages,
 # or if you only have static assets in 'dist', you might adjust or omit this.
-# main = "src/index.js" # Or "src/index.ts" if using TypeScript
+main = "src/main.js" # Or "src/index.ts" if using TypeScript
 
 # Configuration for serving static assets
 # This tells Wrangler that your static files (HTML, CSS, JS, images, etc.)
