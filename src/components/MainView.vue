@@ -4,21 +4,16 @@
       <div class="sider sidebar">
         <div class="holder">
           <div class="xx" role="navigation" aria-labelledby="main-nav-heading">
-            <div class="title" id="main-nav-heading">Inhaltsverzeichnis</div>
+            <div class="title" id="main-nav-heading">Table of Contents</div>
             <a class="listitem" href="#intro">Intro</a>
-            <a class="listitem" href="#Intro">Über Mich</a>
-            <a class="listitem" href="#Projekte">Projekte</a>
-            <a class="listitem" href="#Lebenslauf">Lebenslauf</a>
-            <a class="listitem" href="#Kontakt">Kontakt</a>
+            <a class="listitem" href="#Intro">About Me</a>
+            <a class="listitem" href="#Projekte">Projects</a>
+            <a class="listitem" href="#Lebenslauf">CV</a>
+            <a class="listitem" href="#Kontakt">Contact Me</a>
             <br />
             <div class="contact">
-              <a href="mailto:yourmail@gmail.com"> yourmail@gmail.com</a>
-              <a href="https://github.com/your-github/"
-                >github.com/your-github</a
-              >
-              <a href="tel:+1-202-555-0179">+1-202-555-0179</a>
-              <br />
-              <a href="/impressum">Impressum</a>
+              <a href="mailto:bscemarslan@gmail.com"> bscemarslan@gmail.com</a>
+              <a href="https://github.com/Darkosxl">github.com/Darkosxl</a>
             </div>
           </div>
         </div>
@@ -27,26 +22,27 @@
         <section id="intro">
           <div class="txt">
             <h1>
-              Hi, Ich bin Name.
+              Hi, I'm Cem Berke Arslan.
               <br />
-              Ich komme aus Göttingen und code zum Spaß.
+              I build tools for content creators, for Venture Capital firms and
+              everyone in between.
             </h1>
             <br />
-            <a href="#Intro">Über Mich <Fa fa="arrow-down" /></a>
+            <a href="#Intro">About Me <Fa fa="arrow-down" /></a>
           </div>
         </section>
         <section id="Intro" aria-labelledby="intro-heading">
-          <h2 id="intro-heading">Über Mich</h2>
+          <h2 id="intro-heading">About Me</h2>
           <span>
-            Ursprünglich komme ich aus der Grafik- & Medienbranche. Mein Bedarf
-            nach Kreativität war damit gedeckt, aber Pixel schieben reicht mir
-            nicht mehr aus. Viel lieber beschäftige ich mich mit den scheinbar
-            unendlich vielen fordernden Problemstellungen, die das Programmieren
-            bietet.
+            I'm into NLP, computer vision, and computer graphics. Currently
+            building a data-driven AI editing agency that can analyze
+            semantically and visually any established content creator and make a
+            creator card that can be paired with adaptive tools to enable a
+            singular editor to operate for a thousand creators.
           </span>
         </section>
         <section id="Projekte" aria-labelledby="projekte-heading">
-          <h2 id="projekte-heading">Projekte</h2>
+          <h2 id="projekte-heading">Projects</h2>
           <div class="cards">
             <div class="card-col">
               <Card :item="projects[0]" :txt="select" />
@@ -60,9 +56,9 @@
         </section>
         <section id="Erfahrungen"></section>
         <section id="Lebenslauf" aria-labelledby="lebenslauf-heading">
-          <h2 id="lebenslauf-heading">Lebenslauf</h2>
+          <h2 id="lebenslauf-heading">CV</h2>
           <div class="lebenslauf">
-            <h3>Berufserfahrung</h3>
+            <h3>Work Experience</h3>
             <div class="cont" v-for="i in erfahrungen" :key="i.ort">
               <span>{{ i.datum }}</span>
               <span>{{ i.extra }}</span>
@@ -72,7 +68,7 @@
             </div>
           </div>
           <div class="bildungsweg">
-            <h3>Bildungsweg</h3>
+            <h3>Education</h3>
             <div class="cont" v-for="i in bildung" :key="i.titel">
               <span>{{ i.datum }}</span>
               <span>{{ i.extra }}</span>
@@ -82,20 +78,16 @@
             </div>
           </div>
           <br />
-          <a href="/cv.pdf"> <Fa fa="file-pdf" /> PDF herunterladen </a>
+          <a href="/cv.pdf"> <Fa fa="file-pdf" /> Download PDF </a>
         </section>
         <section id="Kontakt" aria-labelledby="kontakt-heading">
-          <h2 id="kontakt-heading">Kontakt</h2>
-          yourmail@gmail.com
+          <h2 id="kontakt-heading">Contact Me</h2>
+          <p>Contact me!</p>
+          bscemarslan@gmail.com
           <br />
-          <a href="mailto:yourmail@gmail.com">
-            <Fa fa="envelope-o" /> Email schreiben
+          <a href="mailto:bscemarslan@gmail.com">
+            <Fa fa="envelope-o" /> Send Email
           </a>
-          <br />
-          <br />
-          +1-202-555-0179
-          <br />
-          <a href="tel:+1-202-555-0179"> <Fa fa="phone" /> Anrufen</a>
         </section>
       </div>
     </div>
@@ -117,49 +109,55 @@ export default {
   data: () => ({
     erfahrungen: [
       {
-        datum: '01 / 2020 – heute',
+        datum: '02 / 2025 – Current',
+        extra: 'Vertical AI Content Agency',
+        titel: 'Tech Cofounder',
+        ort: '*****',
+        txt: 'Milan, Italy',
+      },
+      {
+        datum: '08 / 2024 – 02 / 2025',
         extra: '',
-        titel: 'Maschinenbediener im Metallbau',
-        ort: 'YourJobsLocation Ldt, TX',
-        txt: '',
+        titel: 'Virtual Scenario Development Engineer Intern',
+        ort: 'Toyota Motor Europe',
+        txt: 'Brussels, Belgium',
       },
       {
-        datum: '11 / 2016',
-        extra: '(8 Wochen Praktikum)',
-        titel: 'Als Mediengestalter (Digital & Print)',
-        ort: 'YourJobsLocation Ldt, TX',
-        txt: 'Print-Design, Web-Development, UI/UX',
+        datum: '07 / 2023 - 01 / 2024',
+        extra: '',
+        titel: 'Business Analyst',
+        ort: 'Amazon EU Sarl.',
+        txt: 'Luxembourg City, Luxembourg',
       },
       {
-        datum: '09 / 2014',
-        extra: '(3 Wochen Praktikum)',
-        titel: 'Als Mediengestalter (Digital & Print)',
-        ort: 'YourJobsLocation Ldt, TX',
-        txt: 'Bildbearbeitung, Logo & CI Entwicklung',
+        datum: '09 / 2022 - 06 / 2023',
+        extra: '',
+        titel: 'Senior AI Engineer',
+        ort: 'Pooly Technologies Inc.',
+        txt: 'Istanbul, Türkiye',
+      },
+      {
+        datum: '06 / 2022 - 08 / 2022',
+        extra: '',
+        titel: 'Software Developer',
+        ort: 'CMV Teknoloji',
+        txt: 'Istanbul, Türkiye',
       },
     ],
     bildung: [
       {
-        datum: '04 / 2019 – 06 / 2020',
+        datum: '08 / 2021 – 08 / 2025',
         extra: '',
-        titel: 'Wirtschaftsinformatik Studium',
-        ort: 'YourUniversity Ldt, TX',
-        txt: '',
+        titel: 'AI and Math Major',
+        ort: 'Bocconi University',
+        txt: 'Milan, Italy',
       },
       {
-        datum: '08 / 2015 – 06 / 2018',
+        datum: '08 / 2016 – 06 / 2021',
         extra: '',
-        titel:
-          'Fachabitur Berufsschulabschluss zum gestaltungstechnischen Assistenten',
-        ort: 'YourSchool Ldt, TX',
-        txt: '',
-      },
-      {
-        datum: '08 / 2009 – 07 / 2015',
-        extra: '',
-        titel: 'Realschulabschluss',
-        ort: 'YourSchool Ldt, TX',
-        txt: '',
+        titel: 'High School',
+        ort: 'İstanbul Amerikan Robert Lisesi',
+        txt: 'Istanbul, Türkiye',
       },
     ],
     projects: [
@@ -167,29 +165,29 @@ export default {
         id: 0,
         images: [
           {
-            img: '/images/demo-nuance-small.gif',
+            img: '/images/01.gif',
           },
           {
             img: '/images/01.png',
           },
         ],
-        titel: 'Social Networking Plattform',
-        tags: ['VueJS', 'NodeJS', 'mongoDB'],
+        titel: 'VC Ecosystem Traversal LLM',
+        tags: ['Llama-4-Maverick', 'Crunchbase', 'PitchBook'],
         demo: '',
-        source: 'https://github.com/w-smesnoj/BehanceApp',
+        source: 'https://github.com/Darkosxl/Wealt_PoC',
       },
       {
         id: 1,
         images: [
           {
-            img: '/images/demo-diprella-cropped.gif',
+            img: '/images/03.gif',
           },
           {
             img: '/images/03.png',
           },
         ],
-        titel: 'Semantic Form Application',
-        tags: ['VueJS', 'NodeJS', 'mongoDB'],
+        titel: 'Content Creator Card',
+        tags: ['Resnet34', 'MTCNN', 'OpenCV'],
         demo: 'https://diprella-login.herokuapp.com/',
         source: 'https://github.com/w-smesnoj/diprella-login',
       },
@@ -197,31 +195,31 @@ export default {
         id: 2,
         images: [
           {
-            img: '/images/demo-parallax.gif',
+            img: '/images/02.gif',
           },
           {
             img: '/images/02.png',
           },
         ],
-        titel: 'CMS Frontend Webstore',
-        tags: ['VueJS', 'Contentful'],
-        demo: 'https://fierce-island-96798.herokuapp.com/',
-        source: 'https://github.com/w-smesnoj/parallax-swipe',
+        titel: 'Content Creator Card',
+        tags: ['Resnet34', 'MTCNN', 'OpenCV'],
+        demo: '',
+        source: '',
       },
       {
         id: 3,
         images: [
           {
-            img: '/images/04.png',
+            img: '/images/poker.gif',
           },
           {
             img: '/images/04.png',
           },
         ],
-        titel: 'Whiteboard Collaboration App',
-        tags: ['React', 'NodeJS', 'PostgreSQL', 'WebSockets'],
+        titel: 'Texas Holdem Poker',
+        tags: ['Java.net', 'Java.swing', 'Java.awt'],
         demo: '',
-        source: 'https://github.com/w-smesnoj/visual-collaboration-platform',
+        source: 'https://github.com/Darkosxl/Texas-Hold-em-Poker',
       },
     ],
     selected: null,
@@ -514,6 +512,9 @@ section {
     transform: scale(1);
   }
 }
+.main .txt {
+  margin-top: -4.68rem;
+}
 </style>
 
 <style lang="scss" scoped>
@@ -594,6 +595,7 @@ section {
 .sider {
   height: 100%;
   width: 310px;
+  flex-shrink: 0;
 }
 .holder {
   padding: 1rem;
@@ -641,7 +643,7 @@ h2 {
   margin-right: auto;
   z-index: 100;
 }
-div > .main {
+.main {
   max-width: 1000px;
   margin: auto;
   padding: 2rem;

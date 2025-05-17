@@ -12,7 +12,11 @@
           :style="{
             background: `linear-gradient(0deg, #1d1e21 9%, #212225e3 42%, rgba(34, 35, 38, 0) 156% ), url(${
               hover ? item.images[0].img : item.images[1].img
-            }) top center/cover`,
+            }) ${item.id === 0 && hover ? 'center center' : 'top center'}/${
+              item.id === 0 && hover ? 'contain' : 'cover'
+            }`,
+            transform: item.id === 0 ? 'scale(1)' : 'scale(1.02)',
+            backgroundRepeat: item.id === 0 && hover ? 'no-repeat' : undefined,
           }"
         ></div>
         <div class="info">
