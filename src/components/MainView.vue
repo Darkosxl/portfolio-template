@@ -78,7 +78,9 @@
             </div>
           </div>
           <br />
-          <a href="/cv.pdf"> <Fa fa="file-pdf" /> Download PDF </a>
+          <a href="/CEM_BERKE_ARSLAN_Resume_7.pdf">
+            <Fa fa="file-pdf" /> Download PDF
+          </a>
         </section>
         <section id="Kontakt" aria-labelledby="kontakt-heading">
           <h2 id="kontakt-heading">Contact Me</h2>
